@@ -133,6 +133,8 @@
     <ClCompile Include="Sensor.cpp" />
     <ClCompile Include="Temperature.cpp" />
     <ClCompile Include="Lights.cpp" />
+    <ClCompile Include="SoilMoisture.cpp" />
+    <ClCompile Include="Humidity.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
@@ -140,6 +142,8 @@
     <ClInclude Include="Sensor.h" />
     <ClInclude Include="Temperature.h" />
     <ClInclude Include="Lights.h" />
+    <ClInclude Include="SoilMoisture.h" />
+    <ClInclude Include="Humidity.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
