@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// Sensors read data from their own file 
 class Sensor
 {
 	ifstream dataFile;
@@ -10,16 +11,5 @@ class Sensor
 public:
 	Sensor(const string& fileName);
 	~Sensor();
-	double readData();
-	void control();
-};
-
-class Controller {
-	int id;
-	bool status;
-
-public:
-	Controller();
-	bool ChangeStatus();
-	bool ChangeValue(float value);
+	virtual double readData();
 };
