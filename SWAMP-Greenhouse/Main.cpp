@@ -7,7 +7,7 @@
 using namespace std;
 
 int main() {
-	// energy branch test
+
 
 	return 0; 
 }
