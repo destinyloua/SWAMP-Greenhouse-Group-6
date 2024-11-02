@@ -139,6 +139,7 @@
   <ItemGroup>
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Energy.h" />
+    <ClInclude Include="Greenhouse.h" />
     <ClInclude Include="Sensor.h" />
     <ClInclude Include="Temperature.h" />
     <ClInclude Include="Lights.h" />
