@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// Sensors read data from their own file 
+// Devices read data from their own file 
 class Device
 {
 	ifstream dataFile;
