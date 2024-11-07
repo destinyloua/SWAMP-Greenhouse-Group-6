@@ -1,8 +1,8 @@
 #pragma once
 // Humidity header file
-#include "Sensor.h"
+#include "Device.h"
 
-class Humidity : public Sensor {
+class Humidity : public Device {
 public:
 
 };

@@ -12,6 +12,8 @@ class CO2: public Device
 
 public:
 	CO2();
+	void readData() override; 
+	void control() override; 
 	string displayWarning(); 
 	~CO2();
 

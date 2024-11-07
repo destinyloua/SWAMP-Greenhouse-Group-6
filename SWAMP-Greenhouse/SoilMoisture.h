@@ -1,7 +1,7 @@
-#include "Sensor.h"
+#include "Device.h"
 
-class SoilMoisture : public Sensor {
+class SoilMoisture : public Device {
 public:
 	SoilMoisture();
-	double readData();
+	//void readData() override;
 };
