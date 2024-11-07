@@ -148,6 +148,9 @@
     <ClInclude Include="SoilMoisture.h" />
     <ClInclude Include="Humidity.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="CO2Data.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

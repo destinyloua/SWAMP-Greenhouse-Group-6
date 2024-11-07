@@ -4,9 +4,9 @@
 
 //Device.h Implementation
 
-Device::Device(string deviceName)
+Device::Device()
 {
-	this->deviceName = deviceName; 
+	deviceName = " ";
 	isActive = true; 
 }
 

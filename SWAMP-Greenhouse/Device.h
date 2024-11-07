@@ -9,7 +9,7 @@ protected:
 	string deviceName; 
 	bool isActive;
 public:
-	Device(string deviceName); // construct each device with a name 
+	Device(); // default device constructor
 	string getDeviceName();
 	virtual void readData(string fileName) = 0; // implement logic for reading from txt file - will be different for each device 
 	virtual void control() = 0; // implement control logic - will be different for each device 
