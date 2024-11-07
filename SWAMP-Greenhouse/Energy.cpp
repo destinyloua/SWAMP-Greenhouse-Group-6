@@ -17,11 +17,8 @@ Energy::Energy()
 
 Energy::~Energy()
 {
-    if (dataFile.is_open()) {
-        dataFile.close();
-    }
 
-    cout << "EnergyData.txt closed successfully" << endl;
 }
+
 
 

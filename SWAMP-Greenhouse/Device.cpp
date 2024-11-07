@@ -14,3 +14,13 @@ string Device::getDeviceName()
 {
 	return deviceName;
 }
+
+void Device::setStatus(bool status)
+{
+	isActive = status; 
+}
+
+bool Device::getStatus()
+{
+	return isActive;
+}

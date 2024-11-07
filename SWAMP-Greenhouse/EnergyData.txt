@@ -1,8 +1,7 @@
-300
-250
-200
-350
-400
-220
-210
-150
+CO2 10.0
+Humidity 12.0
+Light 12.0
+SoilMoisture 15.0
+Temperature 13.0
+Camera 15.0
+Energy 11.0 
