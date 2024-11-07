@@ -1,5 +1,13 @@
 #pragma once
-class CO2
+#include "Device.h"
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+class CO2: public Device
 {
+	double CO2Value; 
+	ifstream datafile;
+
 };
 

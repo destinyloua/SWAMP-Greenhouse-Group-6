@@ -4,12 +4,12 @@
 using namespace std;
 
 // Sensors read data from their own file 
-class Sensor
+class Device
 {
 	ifstream dataFile;
 
 public:
-	Sensor(const string& fileName);
-	~Sensor();
+	Device(const string& fileName);
+	~Device();
 	virtual double readData();
 };

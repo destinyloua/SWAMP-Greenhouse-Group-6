@@ -131,7 +131,7 @@
     <ClCompile Include="CO2.cpp" />
     <ClCompile Include="Energy.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Sensor.cpp" />
+    <ClCompile Include="Device.cpp" />
     <ClCompile Include="Temperature.cpp" />
     <ClCompile Include="Lights.cpp" />
     <ClCompile Include="SoilMoisture.cpp" />
@@ -142,7 +142,7 @@
     <ClInclude Include="CO2.h" />
     <ClInclude Include="Energy.h" />
     <ClInclude Include="Greenhouse.h" />
-    <ClInclude Include="Sensor.h" />
+    <ClInclude Include="Device.h" />
     <ClInclude Include="Temperature.h" />
     <ClInclude Include="Lights.h" />
     <ClInclude Include="SoilMoisture.h" />
