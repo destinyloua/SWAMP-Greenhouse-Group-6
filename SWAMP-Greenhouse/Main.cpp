@@ -2,6 +2,7 @@
 // Aiden, Destiny, Liam, Tyler
 // The SWAMP 
 
+#include "raylib.h" // make sure you have raylib installed 
 #include <iostream>
 #include <vector>
 #include "Device.h"
@@ -28,6 +29,7 @@ int main() {
 	for (Device* device : devices) {
 		delete device; 
 	}
+
 
 	return 0; 
 }

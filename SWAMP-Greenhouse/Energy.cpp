@@ -5,20 +5,10 @@ using namespace std;
 
 Energy::Energy()
 {
-    watts = 0;
+	deviceName = "Energy Manager";
+	isActive = true;
+	watts = 0.0;
+	fileName = "EnergyData.txt"; // name of simulation data file 
 }
 
-double Energy::getUsage()
-{
-    return watts;
-}
 
-void Energy::optimizeUsage(double watts)
-{
-    this->watts = watts;
-}
-
-void Energy::displayUsage()
-{
-    cout << "Current energy consumption: " << watts << " watts." << endl;
-}
