@@ -3,13 +3,13 @@
 
 using namespace std;
 
-// Devices read data from their own file 
 class Device
 {
-	ifstream dataFile;
-
+protected: 
+	string deviceName; 
 public:
-	Device(const string& fileName);
+	Device(string deviceName); // construct each device with a name 
 	~Device();
-	virtual double readData();
+	virtual void readData(string fileName); // implement logic for reading from txt file - will be different for each device 
+	virtual void control(); // implement control logic - will be different for each device 
 };
