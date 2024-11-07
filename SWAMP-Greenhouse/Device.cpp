@@ -7,6 +7,7 @@
 Device::Device(string deviceName)
 {
 	this->deviceName = deviceName; 
+	isActive = true; 
 }
 
 string Device::getDeviceName()

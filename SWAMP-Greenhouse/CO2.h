@@ -7,7 +7,9 @@ using namespace std;
 class CO2: public Device
 {
 	double CO2Value; 
-	ifstream datafile;
+	bool isDanger; 
+
+public:
 
 };
 

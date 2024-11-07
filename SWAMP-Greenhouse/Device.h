@@ -7,6 +7,7 @@ class Device
 {
 protected: 
 	string deviceName; 
+	bool isActive;
 public:
 	Device(string deviceName); // construct each device with a name 
 	string getDeviceName();
