@@ -1,14 +1,27 @@
 #include "Energy.h"
+#include "Device.h"
 #include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream> // used for parsing string data from file 
+#include <Windows.h> // used for Sleep()
 
 using namespace std;
 
 Energy::Energy()
 {
-	deviceName = "Energy Manager";
-	isActive = true;
-	watts = 0.0;
-	fileName = "EnergyData.txt"; // name of simulation data file 
+	
+}
+
+
+
+Energy::~Energy()
+{
+    if (dataFile.is_open()) {
+        dataFile.close();
+    }
+
+    cout << "EnergyData.txt closed successfully" << endl;
 }
 
 

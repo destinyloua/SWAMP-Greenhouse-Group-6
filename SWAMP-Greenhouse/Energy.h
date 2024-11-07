@@ -1,16 +1,15 @@
 #pragma once
+#include <vector>
 #include "Device.h"
 // for managing energy consumption
 
-class Energy: public Device
+class Energy
 {
-	double watts;
-	string fileName;
+
 
 public:
 	Energy();
-	//void readData() override; 
-	//void control() override; 
+	~Energy(); 
 
 };
 

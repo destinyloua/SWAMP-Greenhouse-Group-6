@@ -7,16 +7,18 @@
 #include <vector>
 #include "Device.h"
 #include "CO2.h"
+#include "Energy.h"
 
 using namespace std;
 
 int main() {
 
-	// create the collection of devices 
+	// create the collection of devices -- need to update with System class during integration testing  
 	vector<Device*> devices;
 	
 	// adding devices to the system 
 	devices.push_back(new CO2());
+
 	
 	// testing devices 
 	for (Device* device: devices) {

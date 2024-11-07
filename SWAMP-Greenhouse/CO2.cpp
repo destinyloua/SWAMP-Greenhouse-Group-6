@@ -60,7 +60,7 @@ void CO2::readData()
 
     // update CO2Value from data file 
     CO2Value = value;
-    co2Data.push_back(CO2Value); // add value to co2Data vector 
+    co2History.push_back(CO2Value); // add value to co2History vector 
     }
 
     // verify data reading successful 
@@ -70,8 +70,8 @@ void CO2::readData()
 // CO2 is monitor only - simulate data updating every 5 seconds as stated in requirements 
 void CO2::simulateCO2Reading()
 {
-    while (index < co2Data.size()) {
-        CO2Value = co2Data[index];
+    while (index < co2History.size()) {
+        CO2Value = co2History[index];
         displayWarning(); 
         Sleep(5000); 
         index++; 

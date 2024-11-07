@@ -1,4 +1,4 @@
-#include "Sensor.h"
+#include "Device.h"
 #include <iostream>
 using namespace std;
 class GUI {
@@ -24,7 +24,7 @@ public:
 };
 
 class System {
-	Sensor* sensor;
+	Device* device;
 	GUI* gui;
 	User* user;
 
