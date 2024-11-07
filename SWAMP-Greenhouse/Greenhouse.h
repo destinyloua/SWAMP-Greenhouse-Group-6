@@ -86,15 +86,15 @@ public:
 };
 
 // monitor only
-class CO2 : public Device {
-	double dangerLevel;
-
-public:
-	CO2();
-	string getDangerLevel();
-	void createGraph();
-	bool danger();
-};
+//class CO2 : public Device {
+//	double dangerLevel;
+//
+//public:
+//	CO2();
+//	string getDangerLevel();
+//	void createGraph();
+//	bool danger();
+//};
 
 class Energy : public Device {
 	double usage;

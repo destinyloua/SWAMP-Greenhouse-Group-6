@@ -39,6 +39,9 @@
     <ClCompile Include="Humidity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CO2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sensor.h">
@@ -63,6 +66,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Greenhouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CO2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
