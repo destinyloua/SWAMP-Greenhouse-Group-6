@@ -6,6 +6,7 @@
 
 class Energy
 {
+	double watts; 
 	fstream fileName; 
 
 public:

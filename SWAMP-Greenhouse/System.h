@@ -1,5 +1,8 @@
 #include "Device.h"
+#include "Energy.h"
+#include "Camera.h"
 #include <iostream>
+#include <vector>
 using namespace std;
 class GUI {
 	int id;
@@ -24,7 +27,9 @@ public:
 };
 
 class System {
-	Device* device;
+	vector <Device> devices;
+	Energy energyMgr; 
+	Camera camera; 
 	GUI* gui;
 	User* user;
 
