@@ -22,6 +22,5 @@ public:
 	void control() override; 
 	void getTrendGraph(); 
 	~CO2();
-
 };
 

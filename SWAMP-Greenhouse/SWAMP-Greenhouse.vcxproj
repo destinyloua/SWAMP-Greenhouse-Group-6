@@ -131,6 +131,7 @@
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="CO2.cpp" />
     <ClCompile Include="Energy.cpp" />
+    <ClCompile Include="GUI.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Device.cpp" />
     <ClCompile Include="System.cpp" />
@@ -138,6 +139,7 @@
     <ClCompile Include="Lights.cpp" />
     <ClCompile Include="SoilMoisture.cpp" />
     <ClCompile Include="Humidity.cpp" />
+    <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
@@ -145,11 +147,13 @@
     <ClInclude Include="Energy.h" />
     <ClInclude Include="Greenhouse.h" />
     <ClInclude Include="Device.h" />
+    <ClInclude Include="GUI.h" />
     <ClInclude Include="System.h" />
     <ClInclude Include="Temperature.h" />
     <ClInclude Include="Lights.h" />
     <ClInclude Include="SoilMoisture.h" />
     <ClInclude Include="Humidity.h" />
+    <ClInclude Include="User.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="CO2Data.txt" />

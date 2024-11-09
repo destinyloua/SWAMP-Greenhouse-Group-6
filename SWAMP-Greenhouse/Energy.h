@@ -2,15 +2,22 @@
 #include <vector>
 #include <fstream>
 #include "Device.h"
-// for managing energy consumption
 
-class Energy
+class Energy: public Device
 {
-	double watts; 
-	fstream fileName; 
+	double watts;
+	bool lowPower;
+	string fileName;
+	vector<double> energyHistory;
+	int index;
 
 public:
 	Energy();
+	void readData() override;
+	void enableLowPower(); 
+	void disableLowPower(); 
+	void showPowerOptions();
+	void control() override;
 	~Energy(); 
 
 };

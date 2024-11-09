@@ -1,40 +1,26 @@
 #include "Device.h"
-#include "Energy.h"
 #include "Camera.h"
+#include "User.h"
+#include "GUI.h"
 #include <iostream>
 #include <vector>
+
 using namespace std;
-class GUI {
-	int id;
-	int userId;
-
-public:
-	GUI();
-	bool Display();
-};
-
-class User {
-	int userId;
-	string userName;
-	string password;
-
-public:	
-	User();
-	bool CreateUser(string userName, string password);
-	bool ValidateLogin(string userName, string password);
-	bool UpdateUser(string newUserName, string newPassword);
-	bool DeleteUser();
-};
 
 class System {
-	vector <Device> devices;
-	Energy energyMgr; 
-	Camera camera; 
+	vector <Device*> devices;
+	Camera* camera; 
 	GUI* gui;
 	User* user;
 
 public:
 	System();
+	// device management 
+	void addDevice(Device* d); 
+	void removeDevice(Device* d);
+	vector<Device> getDevices(); 
+
+
 	bool Initialize();
 	bool Mornitor();
 	bool Control();

@@ -2,7 +2,7 @@
 // Aiden, Destiny, Liam, Tyler
 // The SWAMP 
 
-#include "raylib.h" // make sure you have raylib installed 
+//#include "raylib.h" // make sure you have raylib installed 
 #include <iostream>
 #include <vector>
 #include "Device.h"
@@ -13,12 +13,13 @@ using namespace std;
 
 int main() {
 
-	// create the collection of devices -- need to update with System class during integration testing  
+	// create the collection of devices -- need to update with System class  
 	vector<Device*> devices;
 	
 	// adding devices to the system 
+	devices.push_back(new Energy());
 	devices.push_back(new CO2());
-
+	
 	
 	// testing devices 
 	for (Device* device: devices) {
