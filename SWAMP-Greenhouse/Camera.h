@@ -1,25 +1,26 @@
 #pragma once
 // Camera header file
 #include <string>
+#include <list>
 
 class Camera {
+private:
 	bool isRecording;
 	bool motionDetected;
 	int zoomLevel;
-	std::string cloudStoragePath;
-	int positionX;
-	int positionY;
-
+	std::string simulatedImagePath;
+	std::string position;
 public:
 	Camera();
-	void viewLiveFeed();
-	void recordAndSaveToCloud();
-	void detectMotion();
-	void alertUser();
-	void zoomIn();
-	void zoomOut();
-	void moveLeft();
-	void moveRight();
-	void moveUp();
-	void moveDown();
+	Camera(std::string simulatedImagePath = "");
+	~Camera();
+	using Image = std::string; // Placeholder for Image type, replace with appropriate image handling type
+	Image viewLiveFeed();
+	void startRecording();
+	void stopRecording();
+	std::string detectMotion();
+	void zoom(std::string direction);
+	void moveCamera(std::string direction);
+	std::list<std::string> readSimulatedData(std::string filePath);
+	void sendToHMI(std::string data);
 };
